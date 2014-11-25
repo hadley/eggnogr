@@ -27,7 +27,7 @@ shinyUI(fluidPage(
         tags$li("Slowly add sugar and blend for one additional minute."),
         tags$li("With blender still running, add nutmeg, brandy, rum, milk and cream until combined."),
         tags$li("Chill thoroughly to allow flavors to combine."),
-        tags$li("Serve in in chilled wine glasses or champagne coupes, grating additional ",
+        tags$li("Serve in chilled wine glasses or champagne coupes, grating additional ",
           "nutmeg on top immediately before serving.")
       )
     )
