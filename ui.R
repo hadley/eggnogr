@@ -27,5 +27,6 @@ shinyUI(fluidPage(
           "nutmeg on top immediately before serving.")
       )
     )
-  )
+  ),
+  p(a("Read the source", href = "https://github.com/hadley/eggnogr"))
 ))
