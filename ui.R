@@ -11,7 +11,8 @@ shinyUI(fluidPage(
       p("How much eggnog do you want?"),
       numericInput("quantity", "", 1),
       selectInput("units", "", names(units)),
-      checkboxInput("variation", "Clyde common variation?")
+      checkboxInput("variation", "Clyde common variation?"),
+      checkboxInput("nice", "Nice numbers? (makes vol approx)", TRUE)
     ),
     column(width = 8,
       h2("Ingredients"),

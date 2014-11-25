@@ -14,8 +14,9 @@ variation <- data.frame(
   stringsAsFactors = FALSE
 )
 
-scale <- function(ingredients, quantity, unit) {
+scale <- function(ingredients, quantity, unit, nice = TRUE) {
   by <- quantity * to_oz(unit) / 10
+  if (nice) by <- floor(by)
     
   ingredients$quantity <- ingredients$quantity * by
   ingredients
