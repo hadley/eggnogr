@@ -15,15 +15,14 @@ variation <- data.frame(
 )
 
 scale <- function(ingredients, quantity, unit) {
-  by <- quantity * to_oz(unit) / serving_oz
+  by <- quantity * to_oz(unit) / 10
     
   ingredients$quantity <- ingredients$quantity * by
   ingredients
 }
 
-serving_oz <- sum(ingredients$vol, na.rm = TRUE)
 units <- c(
-  "serving" = serving_oz,
+  "serving" = 10,
   "oz" = 1,
   "cup" = 8,
   "quart" = 32,
