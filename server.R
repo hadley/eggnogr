@@ -1,6 +1,8 @@
 library(shiny)
 source("ingredients.R")
 
+options(shiny.table.class = "table table-hover")
+
 shinyServer(function(input, output) {
   ingredients <- reactive(
     if (input$variation) variation else basic      
