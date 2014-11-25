@@ -12,7 +12,8 @@ shinyUI(fluidPage(
       numericInput("quantity", "", 1, min = 1),
       selectInput("units", "", names(units)),
       checkboxInput("variation", "Clyde common variation?"),
-      checkboxInput("nice", "Nice numbers? (makes vol approx)", TRUE)
+      checkboxInput("nice", "Nice numbers? (makes vol approx)", TRUE),
+      checkboxInput("metric", "Would you like metric units?")
     ),
     column(width = 8,
       h2("Ingredients"),

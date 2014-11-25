@@ -7,7 +7,8 @@ shinyServer(function(input, output) {
   )
   
   scaled <- reactive({
-    df <- scale(ingredients(), input$quantity, input$units, nice = input$nice)
+    df <- scale(ingredients(), input$quantity, input$units, nice = input$nice,
+      metric = input$metric)
     df$quantity <- format(df$quantity, drop0trailing = TRUE)
     df
   })
