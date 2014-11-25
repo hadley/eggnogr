@@ -9,7 +9,7 @@ shinyUI(fluidPage(
         href = "http://www.jeffreymorgenthaler.com/2009/egg-nog/"), ". Scaling ",
         " by Hadley Wickham, R, and ", a("shiny", href = "http://shiny.rstudio.com"), "."),
       p("How much eggnog do you want?"),
-      numericInput("quantity", "", 1),
+      numericInput("quantity", "", 1, min = 1),
       selectInput("units", "", names(units)),
       checkboxInput("variation", "Clyde common variation?"),
       checkboxInput("nice", "Nice numbers? (makes vol approx)", TRUE)
